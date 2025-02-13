@@ -32,7 +32,7 @@
     ansible.builtin.unarchive:
       src: /tmp/frontend.zip
       dest: /usr/share/nginx/html
-      remote_host: yes
+      remote_src: yes
 
   - name: copy expense config
     ansible.builtin.copy:
